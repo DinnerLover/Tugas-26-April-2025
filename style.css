@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Handjet';
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    max-width: 320px;
+    margin: 30px auto;
+}
+img {
+    width: 150px;
+    margin: 0 auto;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+input {
+    color: dimgray;
+    background-color: gainsboro;
+    border: 0;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 20px;
+    text-align: center;
+    margin: 10px 0;
+}
+button {
+    color: lavenderblush;
+    background-color: sienna;
+    border: 0;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 20px;
+    text-align: center;
+}
+ul {
+    margin-top: 20px;
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    /* background-color: tomato; */
+}
+ul li {
+    position: relative;
+    font-size: 20px;
+    background-color: aliceblue;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    flex: 1 1 auto;
+    /* flex-basis: auto;
+    flex-grow: 1;
+    flex-shrink: 1; */
+}
+ul li .remove-btn {
+    position: absolute;
+    background-color: transparent;
+    top: 4px;
+    right: 8px;
+    color: black;
+    cursor: pointer;
+    display: none;
+}
+ul li:hover .remove-btn {
+    display: inline;
+}
